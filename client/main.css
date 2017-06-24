@@ -1,0 +1,89 @@
+/* CSS declarations go here */
+.button {
+    background-color: #4CAF50; /* Green */
+    border:none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+
+}
+.text{
+	border: 1px black solid;
+	height: 30px;
+	width:300px;
+	font-size:15px;
+}
+.dashboard
+{
+	
+	height:150px;
+	width:500px;
+	margin-left: 250px;
+}
+.logout{
+	margin-left:450px
+}
+.leaderboard
+{
+	border: 0px red solid;
+	height: 800px; 
+	width: 1000px;
+	margin-left: 150px;
+}
+.posts{
+	font-size: 20px;
+	margin-left: 300px;
+	color:red;
+}
+.register
+{
+	border: 2px green solid;
+
+}
+.log
+{
+	
+}
+.form {
+    border: 0px solid #f1f1f1;
+    width: 50%;
+    margin-left: 200px;
+}
+
+input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.button1{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+
+.button2 {
+    background-color: #4CAF50; /* Green */
+    border:none;
+    color: white;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    
+  
+
+}

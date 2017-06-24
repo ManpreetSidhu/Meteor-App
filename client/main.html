@@ -1,0 +1,67 @@
+
+<head>
+  
+  <title>application</title>
+</head>
+
+<body>
+
+  {{#if currentUser}}
+        {{> dashboard}}
+        {{> leaderboard}}
+    {{else}}
+        {{> register}}
+        {{> login}}
+    {{/if}}
+
+</body>
+<template name="register">
+  <p>Register Here</p>
+    <form class="form">
+        <input type="email" name="registerEmail" placeholder="Enter your Email">
+        <input type="password" name="registerPassword" placeholder="Enter your password">
+        <input type="submit" value="Register" class="button1">
+    </form>
+</template>
+<template name="login">
+  <div class="log">
+  <p>Please Login Here</p>
+    <form class="form">
+        <input type="email" name="loginEmail" placeholder="Enter your Email">
+        <input type="password" name="loginPassword" placeholder="Enter your password">
+        <input type="submit" value="Login" class="button1">
+    </form>
+  </div>
+</template>
+<template name="dashboard">
+  <div class="dashboard">
+    <p><a href="#" class="logout">Logout</a></p>
+    <p>You're logged in.</p>
+    <p>your username is {{username}}</p>
+    <form>
+      <input type="text" name="message" placeholder="Please post your message" class="text" required="">
+      <input type="submit" value="Post" class="button">
+    </form>
+  </div>
+</template>
+<template name="leaderboard">
+  <div class="leaderboard">
+    <p class="posts">List of Posts</p>
+    
+    {{# each lists}}
+      <li style="list-style-type:none">
+      <input type="checkbox" checked="{{checked}}">
+      {{messages}} : {{createdAt}}
+      <input type="button" value="Remove" class="button2"></li>
+    {{/each}}
+  
+
+  </div>
+</template>
+
+
+  
+
+
+
+
